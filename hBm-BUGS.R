@@ -3,6 +3,8 @@
 # Will be adjusting priors and hyper-priors as the model develops as this draft uses their parameterization 
 # model { phi[y*k] p[y*k] Psi[y*k] }  for k locations scenario: k=1, k=2, k = 1...n observable, k= n+1 unobserved/dead.
 
+# Need to think about the appropriateness of the Bernouli distribution in the observation model. Because there are two ways of not deteting something: 1) it is dead, and 2) failed to capture it. So, I will look at other distirubtions like a zero-inflated Poisson. 
+
 # data file requirements: K locations, N[y], T, Y, z[y,i,t], w[y,i,t], c[y,i]
 # initial values file requirements
 # z[y,i,t],
